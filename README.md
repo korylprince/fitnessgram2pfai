@@ -17,7 +17,9 @@ fitnessgram2pfai.py is a Python 3 script to convert data from [The Cooper Instit
 
 Before exporting data from Fitnessgram, make sure that the "Local Identifier" for each campus (Settings -> Districts & Schools) is set to its 9-digit ID.
 
-To get the input file for this script sign into Fitnessgram, and go to Menu -> Reports -> Data Export -> Fitnessgram Data Export and click "View Report". Make sure all of your data is selected, "DEIDENTIFY" is set to "No De-identification", and "REPORT OUTPUT" is set to "CSV". Click "Run Report" to download the CSV. It will be easiest if you place the downloaded file in the same directory as the `fitnessgram2pfai.py` script.
+Next, make sure the "Process Scores" button for all of your Fitnessgram events has been clicked.
+
+Finally, to get the input file for this script sign into Fitnessgram, and go to Menu -> Reports -> Data Export -> Fitnessgram Data Export and click "View Report". Make sure all of your data is selected, "DEIDENTIFY" is set to "No De-identification", and "REPORT OUTPUT" is set to "CSV". Click "Run Report" to download the CSV. It will be easiest if you place the downloaded file in the same directory as the `fitnessgram2pfai.py` script.
 
 Note: this CSV is output in an odd, UTF-16 format. The script accounts for this, so don't try to edit the data in this spreadsheet. If you need to edit any data, edit it in Fitnessgram itself, or use a merge CSV.
 
