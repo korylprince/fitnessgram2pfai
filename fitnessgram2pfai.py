@@ -103,14 +103,6 @@ def read_fg(path, warn):
         # parse PACER
         final["PACER Laps"] = final["PACER15laps"] if final["PACER15laps"] != "" else final["PACER20laps"]
 
-        # parse race/ethnicity
-        final["IsHispanicLatino"] = "1" if final["Ethnicity"] == "Hispanic or Latino" else "0"
-        final["IsAmericanIndianAlaskaNative"] = "1" if final["Race"] == "American Indian or Alaska Native" else "0"
-        final["IsAsian"] = "1" if final["Race"] == "Asian" else "0"
-        final["IsBlackAfricanAmerican"] = "1" if final["Race"] == "Black or African American" else "0"
-        final["IsNativeHawaiianOtherPacificIslander"] = "1" if final["Race"] == "Native Hawaiian or Other Pacific Islander" else "0"
-        final["IsWhite"] = "1" if final["Race"] == "White" else "0"
-
         exemptions = [k for k, v in final.items() if "HFZ" in k and v == "11"]
 
         # translate to PFAI fields
